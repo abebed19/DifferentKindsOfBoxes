@@ -25,7 +25,7 @@ public class Ebook implements Readable {
         return this.name;
         
     }
-    private int pages(){
+    public int pages(){
         return this.pages.size();
     }
  
