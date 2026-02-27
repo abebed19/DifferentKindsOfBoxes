@@ -39,6 +39,23 @@ public class TestInterface {
             page = page + 1;
         }
         
+        
+        ArrayList<Readable> readingList = new ArrayList<>();
+        readingList.add(new TextMessage("ope", "never been programming before..."));
+        readingList.add(new TextMessage("ope", "gonna love it i think!"));
+        readingList.add(new TextMessage("ope", "give me something more challenging! :)"));
+        readingList.add(new TextMessage("ope", "you think i can do it?"));
+        readingList.add(new TextMessage("ope", "up here we send several messages each day"));
+        
+        ArrayList<String> p = new ArrayList<>();
+        p.add("A method can call itself.");
+        readingList.add(new Ebook("Introduction to Recursion.", pages));
+   
+        readingList.forEach((readable)->{
+          System.out.print(readable.read());
+        });
+
+        
   
         
     }
